@@ -1,0 +1,35 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: monthly
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: "@babel/core"
+    versions:
+    - 7.12.10
+  - dependency-name: "@babel/preset-react"
+    versions:
+    - 7.12.10
+  - dependency-name: "@babel/plugin-proposal-numeric-separator"
+    versions:
+    - 7.12.7
+  - dependency-name: "@babel/plugin-proposal-optional-chaining"
+    versions:
+    - 7.12.7
+  - dependency-name: "@babel/plugin-proposal-logical-assignment-operators"
+    versions:
+    - 7.12.1
+  - dependency-name: "@babel/plugin-proposal-function-sent"
+    versions:
+    - 7.12.1
+  - dependency-name: "@babel/plugin-transform-modules-commonjs"
+    versions:
+    - 7.12.1
+  - dependency-name: "@babel/plugin-proposal-export-namespace-from"
+    versions:
+    - 7.12.1
+  - dependency-name: "@babel/plugin-proposal-nullish-coalescing-operator"
+    versions:
+    - 7.12.1
